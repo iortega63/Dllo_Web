@@ -1,0 +1,200 @@
+/*Dar estilo al encabezado y a sus elementos.*/
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  font-family: Verdana;
+  padding: 15px;
+  border: black 2px solid;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  float: left;
+  padding-top: 20px;
+}
+
+.contact {
+  font-size: 15px;
+  float: right;
+}
+
+.contact p {
+  display: flex;
+  align-items: center;
+  justify-content: all;
+}
+
+#btn_log {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: black 2px solid;
+  border-radius: 5px;
+  margin: -30px -30px; 
+  position: relative;
+  top: 50%; 
+  left: 0%;
+}
+
+#img_hea {
+  width: 80px;
+  height: 80px;
+  border-radius:100%;
+  border: black 2px solid;
+  display: block;
+  margin: auto;
+}
+
+#img_ctt {
+  width: 25px;
+  height: 25px;
+  border: black 2px solid;
+  border-radius:20%;
+  text-align: center;
+}
+
+/*Dar estilo a la barra de menú.*/
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-left: black 2px solid;
+  border-right: black 2px solid;
+}
+
+.menu li {
+  padding: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: black 2px solid;
+  display: inline-block;
+}
+
+.menu li: hover {
+  background-color: #0099cc;
+}
+
+/*Dar estilo a la sección de "Registro de Viaje".*/
+.Titulo {
+  	background-color: #1E90FF;
+	width: 400px;
+	height: 50px;
+	border: black 3px solid;
+	border-radius: 15px;
+	text-align: center;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	margin: auto;
+}
+.regis {
+	border: black 2px solid;
+	padding: 10px;
+}
+.form1, .form2, .form3 {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	margin: auto;	
+}
+body {
+    text-align: center;
+}
+input {
+	text-align: center;
+	display: inline-block;
+}
+label {
+	text-align: center;
+	display: inline-block;
+}
+
+/*Dar estilo al pie de página y a cada uno de sus elementos.*/
+.footer {
+  background-color: #9933cc;
+  color: #ffffff;
+  border-left: black 2px solid;
+  border-right: black 2px solid;
+  font-size: 12px;
+  font-family: Verdana;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.hours {
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hours p {font-size: 12px; }
+
+.politics {
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.politics p: hover {
+  background-color: black;
+}
+
+.general {
+  font-size: 13px;
+  text-align: center;
+  align-items: center;
+}
+
+.general p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: all;
+}
+
+.copyright {
+  background-color: #33b5e5;
+  color: #ffffff;
+  border: black 2px solid;
+  font-family: Verdana;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: -15px;
+}
+
+/*Aquí empieza el Responsive Web Design.*/
+@media only screen and (max-width: 336px) {
+  .header h1 {font-size: 18px; }
+}
+
+@media (max-width: 524px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact {
+    order: 2;
+    float: left;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .politics {
+    order: 3;
+  }
+  .hours {
+    order: 2;
+  }
+}

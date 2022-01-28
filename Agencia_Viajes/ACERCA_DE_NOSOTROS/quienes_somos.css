@@ -1,0 +1,250 @@
+/*Dar estilo al encabezado de la página y a sus elementos: logo, información de contacto y login.*/
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+  border: black 2px solid;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  float: left;
+  padding-top: 20px;
+}
+
+.contact {
+  font-size: 15px;
+  float: right;
+}
+
+.contact p {
+  display: flex;
+  align-items: center;
+  justify-content: all;
+}
+
+#btn_log {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: black 2px solid;
+  border-radius: 5px;
+  margin: -50px -45px; 
+  position: relative;
+  top: 50%; 
+  left: 50%;
+}
+
+#img_hea {
+  width: 80px;
+  height: 80px;
+  border-radius:100%;
+  border: black 2px solid;
+  display: block;
+  margin: auto;
+}
+
+#img_ctt {
+  width: 25px;
+  height: 25px;
+  border: black 2px solid;
+  border-radius:20%;
+  text-align: center;
+}
+
+/*Dar estilo a la barra de menú de la página y a sus elementos.*/
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-left: black 2px solid;
+  border-right: black 2px solid;
+}
+
+.menu li {
+  padding: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: black 2px solid;
+  display: inline-block;
+}
+
+.menu li: hover {
+  background-color: #0099cc;
+}
+
+/*Dar estilo a las diferentes secciones que componen el contenido principal de la página, y a sus elementos: texto y/o imagen.*/
+.about, .vision {
+  background-color: #9933cc;
+  color: #ffffff;
+  border: black 2px solid;
+  font-size: 18px;
+  font-family: Times New Roman;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.mision, .valores {
+  background-color: #33b5e5;
+  color: #ffffff;
+  border-left: black 2px solid;
+  border-right: black 2px solid;
+  font-size: 18px;
+  font-family: Times New Roman;
+  padding: 15px; /*Cambiar por 0px*/
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.mision, .vision {
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.mision1, .vision1 {
+  height: auto;
+  float: left;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.mision2, .vision2 {
+  height: auto;
+  font-size: 14px;
+  float: right;
+  margin: 0 auto;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+#img_con {
+  width: 100px;
+  height: 100px;
+  border-radius:100%;
+  border: black 2px solid;
+}
+
+#img_about {
+  width: 200px;
+  height: 200px;
+  border: black 2px solid;
+  border-radius:20%; /*Cambiar por 100%*/
+  text-align: center;
+}
+
+/*Dar estilo al pie de página y a la sección de copyright.*/
+.footer {
+  background-color: #9933cc;
+  color: #ffffff;
+  border: black 2px solid;
+  font-size: 12px;
+  font-family: Verdana;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.hours {
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hours p {font-size: 12px; }
+
+.politics {
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.politics p: hover {
+  background-color: black;
+}
+
+.general {
+  font-size: 13px;
+  text-align: center;
+  align-items: center;
+}
+
+.general p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: all;
+}
+
+.copyright {
+  background-color: #33b5e5;
+  color: #ffffff;
+  border: black 2px solid;
+  font-family: Verdana;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: -12px;
+}
+
+/*Aquí empieza el Web Design Responsive.*/
+/*Se alinearán verticalmente los elementos de la página que requieran ser ajustados al tamaño de la pantalla.*/
+@media only screen and (max-width: 336px) {
+  .header h1 {font-size: 18px; }
+}
+
+@media (max-width: 524px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact {
+    order: 2;
+    float: left;
+  }
+  .mision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mision2 {
+    order: 2;
+    float: left;
+  }
+  .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vision2 {
+    order: 2;
+    float: left;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .politics {
+    order: 3;
+  }
+  .hours {
+    order: 2;
+  }
+}
+

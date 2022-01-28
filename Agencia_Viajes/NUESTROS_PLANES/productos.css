@@ -1,0 +1,284 @@
+/*Dar estilo al encabezado y a cada uno de sus elementos: logo, información de contacto y botón de inicio de sesión*/
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+  border: black 2px solid;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  float: left;
+  padding-top: 20px;
+}
+
+.contact {
+  font-size: 15px;
+  float: right;
+}
+
+.contact p {
+  display: flex;
+  align-items: center;
+  justify-content: all;
+}
+
+#btn_log {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: black 2px solid;
+  border-radius: 5px;
+  margin: -50px -45px; 
+  position: relative;
+  top: 50%; 
+  left: 50%;
+}
+
+/*Los siguientes dos bloques corresponden al logo de la empresa y a las imágenes que se muestran junto con la información de contacto*/
+
+#img_hea {
+  width: 80px;
+  height: 80px;
+  border-radius:100%;
+  border: black 2px solid;
+  display: block;
+  margin: auto;
+}
+
+#img_ctt {
+  width: 25px;
+  height: 25px;
+  border: black 2px solid;
+  border-radius:20%;
+  text-align: center;
+}
+
+/*Dar estilo a la barra de menú y a cada uno de sus elementos*/
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-left: black 2px solid;
+  border-right: black 2px solid;
+}
+
+.menu li {
+  padding: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: black 2px solid;
+  display: inline-block;
+}
+
+.menu li: hover {
+  background-color: #0099cc;
+}
+
+/*Este bloque corresponde a la sección de contenido de la página "Nuestros planes"*/
+.planes {
+  background-color: #ffffff;
+  color: black;
+  border: black 2px solid;
+  font-size: 16px;
+  font-family: Times New Roman;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/*Sólo el texto del título principal de la página estará centrado*/
+.planes H1 {text-align: center; }
+
+/*Este bloque contendrá dos contenedores, uno al lado del otro, con la información de los paquetes turísticos*/
+.container {
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px;
+}
+
+/*Ubicar los dos contenedores a derecha e izquierda dentro del contenedor principal*/
+.div_izq {margin: 0 auto; float: left; }
+.div_der {margin: 0 auto; float: right; }
+
+/*Dar estilo a las tablas que van dentro de los dos contenedores, y a cada uno de sus elementos. */
+.city1, .city2 {
+  width: 620px;
+  height: auto;
+  border: black 2px solid;
+  margin: 10px;
+}
+
+.city1 {background-color: #9933cc; }
+.city2 {background-color: #33b5e5; }
+
+td {width: 150px; }
+
+.dest {
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+.rectangulo {
+  width: 70px; 
+  height: 30px; 
+  border: black 2px solid;
+  border-radius: 5px;
+  background: white;
+  margin: 0 auto;
+}
+
+#img_des {
+  width: 150px;
+  height: 150px;
+  border: black 2px solid;
+  border-radius:20%;
+}
+
+/*Estos dos formularios fueron creados con el fin de permitirle al usuario elegir sus preferencias de viaje*/
+.form3, .form4 input {
+  display: inline-block;
+}
+
+.form3, .form4 label {
+  display: inline-block;
+}
+
+#box {
+  width: 35px;
+  height: 13px;
+  border-radius: 5px;
+  border: black 1px solid;
+}
+
+.form3 select {border-radius: 5px; border: black 1px solid; }
+
+/*Cambiar el estilo de los botones de chequeo de los formularios; no funcionó.*/
+/*.form3 circle {border: black 1px solid; }*/
+
+/*Dar estilo al pie de página y a cada uno de sus elementos*/
+.footer {
+  background-color: #9933cc;
+  color: #ffffff;
+  border-left: black 2px solid;
+  border-right: black 2px solid;
+  font-size: 12px;
+  font-family: Verdana;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.hours {
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hours p {font-size: 12px; }
+
+.politics {
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.politics p: hover {
+  background-color: black;
+}
+
+.general {
+  font-size: 13px;
+  text-align: center;
+  align-items: center;
+}
+
+.general p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: all;
+}
+
+.copyright {
+  background-color: #33b5e5;
+  color: #ffffff;
+  border: black 2px solid;
+  font-family: Verdana;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/*Aquí empieza el Web Design Responsive*/
+@media only screen and (max-width: 336px) {
+  .header h1 {font-size: 18px; }
+}
+
+/*Mover el bloque que contiene la información de contacto debajo del logo*/
+@media (max-width: 524px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact {
+    order: 2;
+    float: left;
+  }
+}
+
+@media (max-width: 1360px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .div_der {
+    order: 2;
+    float: left;
+  }
+}
+
+/*Ubicar la segunda columna de cada tabla debajo de la primera*/
+@media all and (max-width:700px){
+    .city1, .city2{
+        width:auto;
+    }
+
+    td{
+        display:block;
+        width:auto;
+    }
+
+    tr{
+        display:block;
+    }
+
+    /*#img_des {
+      width: auto;
+      height: auto;
+    }*/
+}
+
+@media (max-width: 670px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .politics {
+    order: 3;
+  }
+  .hours {
+    order: 2;
+  }
+}
+

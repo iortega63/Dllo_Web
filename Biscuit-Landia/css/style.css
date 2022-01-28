@@ -1,0 +1,196 @@
+body {
+	background-color: white;
+}
+
+/*HOME*/
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail img {
+    height: 160px;
+    width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0 auto;
+  border: black 2px solid;
+  background-color: #F0E68C;
+  align-items: center;
+  text-align: center;
+}
+
+.col-6 {
+  align-items: center;
+  text-align: center;
+}
+
+#img_con {
+  width: 400px;
+  height: 200px;
+}
+
+#img_pdt {
+  width: 250px;
+  height: 200px;
+  border: black 2px solid;
+  border-radius: 20%;
+}
+
+#img_ctt {
+  width: 25px;
+  height: 25px;
+  border: black 2px solid;
+  border-radius: 20%;
+  margin: 12px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  padding: 0px;
+  border: black 2px solid;
+  background-color: #F0E68C;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 12px;
+  align-items: center;
+}
+
+.navbar navbar-expand-lg {
+	background-color: green;
+	border: black 2px solid;
+}
+
+.navbar-toggler-icon {
+  background-color: green;
+}
+
+.navbar-brand, .nav-link {
+	color: #40AD1E;
+	font-size: 18px;
+}
+
+.nav-link a {
+  color: black;
+}
+
+#tit_pag {
+	 color: red;
+	 font-size: 27px;
+}
+
+.carousel-inner {
+	text-align: center;
+	font-size: 12px;
+}
+
+.col-12 {
+	max-width: 250px;
+	width: 250px;
+	max-height: 480px;
+	height: 440px;
+	margin: 0 auto;
+}
+
+.footer {
+	text-align: center;
+	color: red;
+	background-color: #F0E68C;
+	border: black 2px solid;
+	margin-top: 20px;
+}
+
+/*PRODUCTOS*/
+
+.container my-4 {
+	align-items: center;
+	text-align: center;
+	margin-top: 20px;
+	background-color: #F0E68C;
+}
+
+.lead font-weight-bold text-center {
+	color: red;
+	font-size: 20px;
+}
+
+/*EMPAQUES*/
+
+.card-body {
+	text-align: center;
+	font-size: 14px;
+}
+
+/*CONTACTO*/
+
+.map-responsive iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border: black 2px solid;
+}
+
+#form_cont, #form_log, #form_reg {
+	width: 600px;
+	padding: 10px;
+	margin: 10px;
+	border: black 2px solid;
+	background-color: #51BF51;
+}
+
+#exampleFormControlFile1, #exampleFormControlFile1 {
+  color: black;
+}
+
+#exampleFormControlFile1 {
+  align-items: center;
+  text-align: center;
+}
+
+/*REGISTRO*/
+
+#form_reg {
+	background-color: #DDA0DD;
+}
+
+.form, .form-group, .checkbox {
+  margin: 0 auto;
+}
+
+#lab_reg {
+  width: 70px;
+  text-align: left;
+}

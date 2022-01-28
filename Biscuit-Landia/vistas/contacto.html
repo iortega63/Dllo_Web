@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Contacto</title>
+  <link rel="stylesheet" type="text/css" href="..\css\bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="..\css\bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="..\css\bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="..\css\bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="..\css\style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='custom.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="..\css\style.css">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> --> <!-- Se necesita esta librería para el carrusel -->
+</head>
+
+<body>
+
+  <!-- Aquí empieza el encabezado de la página, el cual está conformado por el logo y nombre de la empresa, y su información de contacto. -->
+
+  <div class="container-fluid">
+    <div class="row justify-content-around" style="padding: 12px; margin-bottom: -20px;">
+      <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+        <img src="..\img\img_logos\logo3.jpg" alt="..." style="width: 100%; border: black 2px solid; border-radius: 20px;">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+        <div class="row justify-content-center">
+          <h1 class="display-4 font-weight-bold text-center" style="color: red;"><b><i>Biscuit-landia</i></b></h1>
+        </div>
+        <div class="row justify-content-center">
+          <p id="tit_pag" class="lead text-center font-weight-bold">Bocaditos de cielo</p>
+        </div>
+        <div class="row justify-content-center">
+          <img id="img_ctt" src="..\img\img_logos\login_logo.jpg"> 
+          <button type="button" class="btn btn-success btn-sm" onclick="location.href='./login.html'">Login</button>      
+          <img id="img_ctt" src="..\img\img_logos\cesta_logo.png">          
+          <button type="button" class="btn btn-success btn-sm btn" onclick="alert('Serás redireccionado al carrito de compras.')">Cesta</button>    
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-12 col-sm-12">
+        <p><img id="img_ctt" src="..\img\img_logos\mail_logo.png">biscuit-landia@gmail.com.co</p>
+        <p><img id="img_ctt" src="..\img\img_logos\tel_logo.png">(+574) 227 2727</p>
+        <p><img id="img_ctt" src="..\img\img_logos\cel_logo.png">(+57) 322 227 2727</p>
+      </div>
+    </div>    
+  </div>
+
+  <!-- Aquí empieza el menú de la página. -->
+
+  <nav class="navbar navbar-expand-lg" style="border-left: black 2px solid; border-right: black 2px solid; border-bottom: black 2px solid; margin-bottom: 10px;">
+    <a class="navbar-brand" href="..\index.html"><b>Inicio</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href=".\quienes.html"><b>Quiénes somos</b><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=".\productos.html">Nuestros <b><i>biscuit</i></b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=".\empaques.html"><b>Nuestros empaques</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=".\contacto.html"><b>Contáctanos</b></a> 
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#"><b>Queremos conocerte</b></a> 
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-success btn-sm" type="submit">Buscar</button>
+    </form>
+  </nav>
+
+  <!-- Aquí empieza la sesión de contenido de la página. -->
+
+  <p id="tit_pag" class="lead font-weight-bold text-center">Contáctanos</p>
+  <!-- <div class="container-fluid"> -->
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" frameborder="0" allowfullscreen></iframe>
+    </div>
+  <!-- </div> -->
+  <div class="row justify-content-center" style="background-color: #F0E68C; margin-top: 20px; margin-bottom: 20px; border: black 2px solid;">
+    <div class="col-6">
+      <h3><b><i>Biscuit-landia</i></b></h3>
+      <p>Cra. 70 #33-27</p>
+      <p>Sector Estadio</p>
+      <p>Medellín, Antioquia, Colombia</p>
+      <br>
+      <p><img id="img_ctt" src="..\img\img_logos\mail_logo.png">biscuit-landia@gmail.com.co</p>
+      <p><img id="img_ctt" src="..\img\img_logos\tel_logo.png">(+574) 227 2727</p>
+      <p><img id="img_ctt" src="..\img\img_logos\cel_logo.png">(+57) 322 227 2727</p>      
+    </div>
+    <br>
+    <div class="col-lg-4 bt-4">
+      <div class="d-flex justify-content-around align-items-center" style="padding: 10px;">
+        <form id="form_cont">
+          <div class="col">
+            <label for="exampleFormControlSelect1"><b>Tipo de solicitud</b></label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Inquietud</option>
+              <option>Petición</option>
+              <option>Queja o reclamo</option>
+              <option>Sugerencia</option>
+            </select>
+          </div>
+          <br>            
+          <div class="col">
+            <label for="validationServerUsername"><b>Email</b></label>
+            <div class="input-group">
+              <!-- <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+              </div> -->
+              <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="usuario@ejemplo.com" aria-describedby="inputGroupPrepend3" required>
+              <div class="invalid-feedback">
+                Este campo es obligatorio.
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="validationServerUsername"><b>Documento adjunto</b></label>
+            <div class="row justify-content-center">
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"><b>Mensaje</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+              <label class="form-check-label" for="invalidCheck3" style="color: black;">
+                Aceptar términos y condiciones
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-success btn-sm" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Aquí empieza el pie de página; la primera parte presentará información general acerca de la empresa, y la última sección contendrá menciones legales, licencias y derechos de autor sobre la marca. -->
+
+  <div class="container-fluid" style="margin-top: 20px;">
+    <div class="row align-items-center" style="padding: 12px; margin-bottom: -20px;">
+      <div class="col">
+        <h6><b>Nuestra tienda:</b></h6>
+        <br>
+        <p>Medellín: Cra. 70 #33-27</p>
+        <br>
+        <h6><b>Nuestros horarios de atención:</b></h6>
+        <br>
+        <p>Lunes a Viernes: 7 a.m. a 7 p.m.</p>
+        <p>Sábados: 7 a.m. a 1 p.m.</p>
+       </div>
+
+      <div class="col" style="text-align: center;">
+        <h6><b>Síguenos en:</b></h6>
+        <p><img id="img_ctt" src="..\img\img_logos\facebook_logo.png">@biscuit-landia</p>
+        <p><img id="img_ctt" src="..\img\img_logos\instagram_logo.png">@biscuit-landia</p>
+        <p><img id="img_ctt" src="..\img\img_logos\twitter_logo.jpg">@biscuit-landia</p>
+      </div>
+
+      <div class="col" style="text-align: right;">
+        <h6>Menciones legales</h6>
+        <h6>Políticas de privacidad y cookies</h6>
+        <h6>Términos y condiciones de venta y entrega</h6>
+        <br>
+        <h6>Preguntas frecuentes</h6>
+        <h6>Trabaja con nosotros</h6><br>
+      </div>      
+    </div>
+  </div>
+
+  <div class="footer">
+    <h5><i>Biscuit-landia</i></h5>
+    <h6>Copyright © 2019</h6>
+    <h6>Nit: 90000000-00</h6>
+    <h6>Registro Invima No. 32294</h6>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.slim.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> <!-- Se necesita esta librería para el carrusel -->
+
+</body>
+
+</html>

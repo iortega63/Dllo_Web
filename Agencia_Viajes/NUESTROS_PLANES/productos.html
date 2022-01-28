@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="productos.css">
+</head>
+<body>
+  <!-- Aquí empieza el encabezado de la página -->
+  <div class="header">
+    <div class="logo">
+      <img id="img_hea" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\logo.png"><br>
+      <h1>TIME TO TRAVEL</h1>
+    </div>    
+    <div class="contact">
+      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\mail_logo.png">info@ttt.com.co</p>
+      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\tel_logo.png">(+574)2272727</p>
+      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\cel_logo.png">(+57)3192272727</p><br>
+      <button id="btn_log" type="submit" onclick="alert('Serás redireccionado a la página de inicio de sesión.')"><b>LOGIN</b></button><br>
+    </div>
+  </div>
+  <!-- Aquí empieza el menú de la página -->
+  <div class="menu">
+    <ul>
+      <li>Home</li>
+      <li>Acerca de nosotros</li>
+      <li>Nuestros planes</li>
+      <li>Nuestras promociones</li>
+      <li>Regístrate</li>
+      <li>Contáctanos</li>
+    </ul>
+  </div>
+  <!-- Aquí empieza el contenido de la página -->
+  <!-- Se crearán dos contenedores principales, en forma anidada: planes y container. Dentro de container se tendrán otros dos contenedores: div_der y div_izq, con tres tablas cada uno, las cuales contendrán a su vez dos formularios: form3 y form4. Las seis tablas corresponden a los seis paquetes turísticos que ofrece la agencia, y cada formulario le permitirá al usuario "armar" su viaje según sus preferencias de transporte, alojamiento y actividades de ocio (diversión y entretenimiento); el precio será calculado en el backend y mostrado en la casilla "rectángulo"-->
+  <div class="planes">
+    <div class="container">
+      <H1 id="title">Nuestros planes</H1>    
+      <div class="div_izq">
+        <table class="city1" border="1">
+          <caption><H3>Cartagena</H3></caption>
+          <td class="dest">
+            <H4>TRANSPORTE Y/O ALOJAMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\cartagena1.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <td class="dest">
+            <H4>DIVERSIÓN Y ENTRETENIMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\cartagena2.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <tr>
+            <td>
+              <form class="form3">
+                <label>Transporte incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Alojamiento incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Categoría del hotel:</label>
+                <select name="estrellas" required>
+                <option>3 estrellas</option>
+                <option>4 estrellas</option>       
+                </select>
+                <br>
+                <label>Días de estadía:</label>
+                <input id="box" type="number" alt="Ingresa el número de días de permanencia en el hotel">
+                <br>
+                <label>Número de huéspedes:</label>
+                <input id="box" type="number" alt="Ingresa el número de personas que se hospedarían en el hotel">
+                <br>
+                <label>Alimentación incluída:</label>
+                <input type="radio">Almuerzo
+                <input type="radio">Cena<br>
+              </form>
+            </td>
+            <td>
+              <form class="form4">
+                <label>Actividades incluídas:</label><br><br>
+                <input type="radio">Tour nocturno por la ciudad amurallada<br>
+                <input type="radio">Actividades acuáticas en Playa Blanca<br>
+                <input type="radio">Visita guiada al castillo de San Felipe<br>
+              </form>  
+            </td>
+          </tr>
+        </table>
+
+        <table class="city2" border="1">
+          <caption><H3>Santa Marta</H3></caption>
+          <td class="dest">
+            <H4>TRANSPORTE Y/O ALOJAMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\marta1.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <td class="dest">
+            <H4>DIVERSIÓN Y ENTRETENIMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\marta2.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <tr>
+            <td>
+              <form class="form3">
+                <label>Transporte incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Alojamiento incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Categoría del hotel:</label>
+                <select name="estrellas" required>
+                <option>3 estrellas</option>
+                <option>4 estrellas</option>       
+                </select>
+                <br>
+                <label>Días de estadía:</label>
+                <input id="box" type="number" alt="Ingresa el número de días de permanencia en el hotel">
+                <br>
+                <label>Número de huéspedes:</label>
+                <input id="box" type="number" alt="Ingresa el número de personas que se hospedarían en el hotel">
+                <br>
+                <label>Alimentación incluída:</label>
+                <input type="radio">Almuerzo
+                <input type="radio">Cena<br>
+              </form>
+            </td>
+            <td>
+              <form class="form4">
+                <label>Actividades incluídas:</label><br><br>
+                <input type="radio">Recorrido guiado por el Tayrona<br>
+                <input type="radio">Paseo en lancha en Taganga<br>
+                <input type="radio">Visita guiada al acuario El Rodadero<br>
+              </form>  
+            </td>
+          </tr>
+        </table>
+
+        <table class="city1" border="1">
+          <caption><H3>San Andrés</H3></caption>
+          <td class="dest">
+            <H4>TRANSPORTE Y/O ALOJAMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\andres1.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <td class="dest">
+            <H4>DIVERSIÓN Y ENTRETENIMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\andres2.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <tr>
+            <td>
+              <form class="form3">
+                <label>Transporte incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Alojamiento incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Categoría del hotel:</label>
+                <select name="estrellas" required>
+                <option>3 estrellas</option>
+                <option>4 estrellas</option>       
+                </select>
+                <br>
+                <label>Días de estadía:</label>
+                <input id="box" type="number" alt="Ingresa el número de días de permanencia en el hotel">
+                <br>
+                <label>Número de huéspedes:</label>
+                <input id="box" type="number" alt="Ingresa el número de personas que se hospedarían en el hotel">
+                <br>
+                <label>Alimentación incluída:</label>
+                <input type="radio">Almuerzo
+                <input type="radio">Cena<br>
+              </form>
+            </td>
+            <td>
+              <form class="form4">
+                <label>Actividades incluídas:</label><br><br>
+                <input type="radio">City tour nocturno en chiva<br>
+                <input type="radio">Buceo en Playa Cristales<br>
+                <input type="radio">Visita al acuario de Los Cayos<br>
+              </form>  
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="div_der">
+        <table class="city2" border="1">
+          <caption><H3>Eje Cafetero</H3></caption>
+          <td class="dest">
+            <H4>TRANSPORTE Y/O ALOJAMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\eje1.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <td class="dest">
+            <H4>DIVERSIÓN Y ENTRETENIMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\eje2.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <tr>
+            <td>
+              <form class="form3">
+                <label>Transporte incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Alojamiento incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Categoría del hotel:</label>
+                <select name="estrellas" required>
+                <option>3 estrellas</option>
+                <option>4 estrellas</option>       
+                </select>
+                <br>
+                <label>Días de estadía:</label>
+                <input id="box" type="number" alt="Ingresa el número de días de permanencia en el hotel">
+                <br>
+                <label>Número de huéspedes:</label>
+                <input id="box" type="number" alt="Ingresa el número de personas que se hospedarían en el hotel">
+                <br>
+                <label>Alimentación incluída:</label>
+                <input type="radio">Almuerzo
+                <input type="radio">Cena<br>
+              </form>
+            </td>
+            <td>
+              <form class="form4">
+                <label>Actividades incluídas:</label><br><br>
+                <input type="radio">Travesía al Valle del Cocora<br>
+                <input type="radio">Visita guiada a las haciendas cafeteras<br>
+                <input type="radio">Visita guiada al Jardín de Mariposas<br>
+              </form>  
+            </td>
+          </tr>
+        </table>
+
+        <table class="city1" border="1">
+          <caption><H3>Amazonas</H3></caption>
+          <td class="dest">
+            <H4>TRANSPORTE Y/O ALOJAMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\amazonas1.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <td class="dest">
+            <H4>DIVERSIÓN Y ENTRETENIMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\amazonas2.jpeg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <tr>
+            <td>
+              <form class="form3">
+                <label>Transporte incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Alojamiento incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Categoría del hotel:</label>
+                <select name="estrellas" required>
+                <option>3 estrellas</option>
+                <option>4 estrellas</option>       
+                </select>
+                <br>
+                <label>Días de estadía:</label>
+                <input id="box" type="number" alt="Ingresa el número de días de permanencia en el hotel">
+                <br>
+                <label>Número de huéspedes:</label>
+                <input id="box" type="number" alt="Ingresa el número de personas que se hospedarían en el hotel">
+                <br>
+                <label>Alimentación incluída:</label>
+                <input type="radio">Almuerzo
+                <input type="radio">Cena<br>
+              </form>
+            </td>
+            <td>
+              <form class="form4">
+                <label>Actividades incluídas:</label><br><br>
+                <input type="radio">Recorrido guiado por la reserva Tanimboca<br>
+                <input type="radio">Paseo en balsa en el lago Tarapoto<br>
+                <input type="radio">Visita guiada a Tabatinga<br>
+              </form>  
+            </td>
+          </tr>
+        </table>
+
+        <table class="city2" border="1">
+          <caption><H3>Villa de Leyva</H3></caption>
+          <td class="dest">
+            <H4>TRANSPORTE Y/O ALOJAMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\leyva1.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <td class="dest">
+            <H4>DIVERSIÓN Y ENTRETENIMIENTO</H4>
+            <img id="img_des" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\leyva2.jpg">
+            <H4>Precio en COP*:</H4>
+            <div class="rectangulo"></div>
+            <H6>*Esto es lo que pagarías por los servicios seleccionados.</H6>
+          </td>
+          <tr>
+            <td>
+              <form class="form3">
+                <label>Transporte incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Alojamiento incluído:</label>
+                <input type="radio">Sí
+                <input type="radio">No<br>
+                <label>Categoría del hotel:</label>
+                <select name="estrellas" required>
+                <option>3 estrellas</option>
+                <option>4 estrellas</option>       
+                </select>
+                <br>
+                <label>Días de estadía:</label>
+                <input id="box" type="number" alt="Ingresa el número de días de permanencia en el hotel">
+                <br>
+                <label>Número de huéspedes:</label>
+                <input id="box" type="number" alt="Ingresa el número de personas que se hospedarían en el hotel">
+                <br>
+                <label>Alimentación incluída:</label>
+                <input type="radio">Almuerzo
+                <input type="radio">Cena<br>
+              </form>
+            </td>
+            <td>
+              <form class="form4">
+                <label>Actividades incluídas:</label><br><br>
+                <input type="radio">Visita guiada por el centro histórico<br>
+                <input type="radio">Recorrido guiado por los pozos azules<br>
+                <input type="radio">Visita al parque temático Gondava<br>
+              </form>  
+            </td>
+          </tr>
+        </table>
+      </div>                 
+    </div>
+  </div>
+  <!-- Aquí empieza el pie de página de la página -->
+  <div class="footer">
+    <div class="hours">
+      <h3>Horario de atención:</h3>
+      <p>Lunes a Viernes: 7 a.m. a 7 p.m.</p>
+      <p>Sábados: 7 a.m. a 1 p.m.</p><br>
+      <h3>Nuestras oficinas:</h3>
+      <p>Medellín: Cra. 50A #32-27</p>
+      <p>Bogotá: Cra. 50A #32-27</p>
+      <p>Cali: Cra. 50A #32-27</p>
+     </div>
+    <div class="politics">
+      <h3>Aviso legal</h3><br>
+      <h3>Política de privacidad</h3><br>
+      <h3>Política de cookies</h3><br>
+      <h3>Términos y condiciones</h3>
+     </div>
+    <div class="general">
+      <h3>Preguntas frecuentes</h3><br><br>
+      <h3>PQRS</h3><br><br>
+      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\facebook_logo.png">@timetotravel</p>
+      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\instagram_logo.png">@timetotravel</p>
+      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\twitter_logo.jpg">@timetotravel</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <h2>Time To Travel</h2>
+    <p>Copyright © 2019</p>
+    <p>Nit: 90000000-00</p>
+    <p>Registro Nacional de Turismo No. 32294</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="registro2.css">
+</head>
+<body>
+	<!-- Aquí empieza el encabezado de la página, el cual está conformado por el logo y nombre de la empresa, y su información de contacto. -->
+	<div class="header">
+		<div class="logo">
+			<img id="img_hea" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\logo.png"><br>
+	      	<h1>TIME TO TRAVEL</h1>
+	    </div>    
+	    <div class="contact">
+	      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\mail_logo.png">info@ttt.com.co</p>
+	      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\tel_logo.png">(+574)2272727</p>
+	      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\cel_logo.png">(+57)3192272727</p><br>
+	      <button id="btn_log" type="submit" onclick="alert('Serás redireccionado a la página de inicio de sesión.')"><b>LOGIN</b></button>
+	      <br>
+	    </div>
+	</div>
+	<!-- Aquí empieza el menú de la página "Regístrate". -->
+	<div class="menu">
+		<ul>
+			<li>Home</li>
+	      	<li>Acerca de nosotros</li>
+	      	<li>Nuestros planes</li>
+	      	<li>Nuestras promociones</li>
+	      	<li>Regístrate</li>
+	      	<li>Contáctanos</li>
+	    </ul>
+	</div>
+	<!-- Aquí empieza el contenido principal de la página Regístrate. -->
+	<div class="regis">
+		<H2 class="Titulo">REGISTRO DE VIAJE</H2><br>
+		<br>
+		<form class="form1">
+			<fieldset>
+				<legend class="Titulo"><b>DATOS PERSONALES</b></legend>			
+				<label id="input1">Nombres</label><br>
+				<input type="text" name="input_1" placeholder="Ingresa tu nombre completo"><br>
+				<br>
+				<label id="input2">Apellido</label><br>
+				<input type="text" name="input_2" placeholder="Ingresa tu primer apellido"><br>
+				<br>
+				<label id="input3">Fecha de nacimiento</label><br>
+				<input type="date"><br>
+				<br>
+				<label id="input4">Género</label><br>
+				<input type="radio" name="gender" value="Masculino" checked> Masculino
+		  		<input type="radio" name="gender" value="Femenino"> Femenino
+		  		<input type="radio" name="gender" value="Otro"> Otro<br>
+		  		<br>
+				<label id="input5">Teléfono</label><br>
+				<input type="text" placeholder="Indicativo + Teléfono, sin espacios" size="30" maxlength="8"><br>
+				<br>
+				<label id="input6">Celular</label><br>
+				<input type="text" maxlength="10">
+			</fieldset>
+		</form>
+		<br>
+		<form class="form2">
+			<fieldset>
+				<legend class="Titulo"><b>DATOS DE VIAJE</b></legend>		
+				<label>Fecha Inicio</label><br>
+				<input type="date" placeholder="Ingresa la fecha inicial de tu viaje"><br>
+				<br>
+				<label>Fecha Fin</label><br>
+				<input type="date" placeholder="Ingresa la fecha final de tu viaje"><br>
+				<br>
+				<label>Lugar Salida</label><br>
+				<input type="text" placeholder="Ingresa la ciudad de salida"><br>
+				<br>
+			  	<label>Ciudad Destino</label><br>
+			  	<select class="form-control" name="ListaCiudad" required><br>
+			  		<option value="">Medellín</option><br>
+			  		<option value="">Bogotá</option><br>
+			  		<option value="">Cali</option><br> 			
+			  	</select>
+			  	<br>
+			  	<br>
+			  	<label>No. Viajeros</label><br>
+				<input type="number"><br>
+		  		<br>
+				<label>Hospedaje</label><br>
+				<input type="radio">Sí
+		  		<input type="radio">No<br>
+		  		<br>
+				<label>Alimentación</label><br>
+				<input type="radio">Sí
+		  		<input type="radio">No<br>
+			</fieldset>
+		</form>
+		<br>	
+		<form class="form3" action="https://www.google.com.co/">
+			<fieldset>
+				<label>Comentarios</label><br>
+				<input type="text" style="width: 300px; height: 100px" maxlength="300"><br>
+				<br>
+				<input type="submit" name="Registrar">
+			</fieldset>		
+		</form>
+	</div>
+	<!-- Aquí empieza el pie de página; la primera parte presentará información general acerca de la empresa, y la última sección contendrá licencias y derechos de autor sobre la marca. --> 
+	<div class="footer">
+	    <div class="hours">
+	      <h3>Horario de atención:</h3>
+	      <p>Lunes a Viernes: 7 a.m. a 7 p.m.</p>
+	      <p>Sábados: 7 a.m. a 1 p.m.</p><br>
+	      <h3>Nuestras oficinas:</h3>
+	      <p>Medellín: Cra. 50A #32-27</p>
+	      <p>Bogotá: Cra. 50A #32-27</p>
+	      <p>Cali: Cra. 50A #32-27</p>
+	     </div>
+	    <div class="politics">
+	      <h3>Aviso legal</h3><br>
+	      <h3>Política de privacidad</h3><br>
+	      <h3>Política de cookies</h3><br>
+	      <h3>Términos y condiciones</h3>
+	     </div>
+	    <div class="general">
+	      <h3>Preguntas frecuentes</h3><br><br>
+	      <h3>PQRS</h3><br><br>
+	      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\facebook_logo.png">@timetotravel</p>
+	      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\instagram_logo.png">@timetotravel</p>
+	      <p><img id="img_ctt" src="C:\Users\equipo\Desktop\Viajes\IMAGENES\twitter_logo.jpg">@timetotravel</p>
+	    </div>
+	</div>
+	<div class="copyright">
+	    <h2>Time To Travel</h2>
+	    <p>Copyright © 2019</p>
+	    <p>Nit: 90000000-00</p>
+	    <p>Registro Nacional de Turismo No. 32294</p>
+	</div>
+</body>
+</html>
